@@ -1,69 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <!-- <a href="https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto" /> -->
-
-    <input type="button" value="GET" onclick="get()" />
+    <input type="button" value="번호 받기" onclick="get()" />
+    <input type="button" value="번호 출력" onclick="button5_click()" />
     <script>
+        lotto = []
         const URL = "https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto";
         function get() {
             fetch(URL, {
                 headers: {
                     'Accept': 'application/json'
                 }
-            }).then(res => res.json)
-                .then(makingLottoNumberTemp => console.log(makingLottoNumberTemp))
-                .then(data => console.log(data))
-                .then(body => console.log(body))
-                .then(n1 => console.log(n1))
-            // .catch(err => console.error(err))
+            })  .then(res => res.json())
+                .then(res => {
+                    lotto[0] = res.n1;
+                    lotto[1] = res.n2;
+                    lotto[2] = res.n3;
+                    lotto[3] = res.n4;
+                    lotto[4] = res.n5;
+                    lotto[5] = res.n6;
+                })
         }
 
-    </script>
-
-
-    <input type="button" value="lotto" onclick="button1_click()" />
-    <script>
-        function button1_click() {
+        function button5_click() {
             console.log(lotto);
         }
     </script>
-
-    <input type="button" value="test" onclick="button2_click()" />
-    <script>
-        let test = [3, 2];
-        function button2_click() {
-            console.log(test);
-        }
-    </script>
-
-    <input type="button" value="res" onclick="button3_click()" />
-    <script>
-        function button3_click() {
-            console.log(res);
-        }
-    </script>
-
-    <input type="button" value="data" onclick="button4_click()" />
-    <script>
-        function button4_click() {
-            console.log(data);
-        }
-    </script>
-
-<input type="button" value="n1" onclick="button5_click()" />
-    <script>
-        function button5_click() {
-            console.log(n1);
-        }
-    </script>
-
-
 </body>
 
 </html>
