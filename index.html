@@ -25,12 +25,12 @@
 
         function lottoGen() {
             get();
-
-            var html = "";
-            html += "";
-            html += lotto + "";
-            html += '';
-            html += '';
+            console.log("lotto : " + lotto);
+            var html = "<tr>";
+            html += "<td>";
+            html += lotto + "<br/>";
+            html += '</td>';
+            html += '</tr>';
             $("#lotto_table").find("tbody").append(html);
         }
     </script>
@@ -74,6 +74,31 @@
         </table>
     </div>
 
+
+
+    <div style="width:100%;text-align: center;">
+        <span id="clipAlert" style="visibility:hidden; height:50px; width:300px;text-align: center;">
+        </span>
+        <br/>
+        <br/>
+        <button type="button" class="btn_register thema_apply" onclick="lottoGen()" >로또번호생성</button>
+    </div>
+    <br/>
+    
+    <div id="lotto_div" style="height: 300px;overflow: auto;">
+        <table id="lotto_table" style="width:100%">
+            <colgroup class="bg1">
+                <col style="width:100%"/>
+            </colgroup>
+            <thead>
+                <tr style="width: 100%;text-align: center;">
+                    <th>추출번호</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>    
+    </div>
 </body>
 
 </html>
