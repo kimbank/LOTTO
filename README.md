@@ -1,11 +1,19 @@
-<h1 align="center"> https://lotto.goldbank.dev </h1>
+<h1 align="center"> 
+  <a href="https://lotto.goldbank.dev" target="blank">LOTTO.GOLDBANK.DEV</a>
+</h1>
+
+</br></br>
+
+<h1 align="center"> 🔨Stack🔨 </h1>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/language-javascript, python-succcess?style"/>
-  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
-  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
-  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
-  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
+  <a><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/></a>
+  <a><img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/></a>
+  <a><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"/></a>
+  <a><img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/></a>
 </p>
+
+</br></br>
 
 # lotto API
 
@@ -22,6 +30,7 @@
 
 **3.** *lotto.csv* 에 **1**의 조합이 없을 경우 **1**의 번호 조합 
 
+</br></br>
 
 # AWS Lambda
 
@@ -29,6 +38,7 @@ Test Lambda REST API test link
 
 > https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto
 
+</br></br>
 
 # HTML UI
 
