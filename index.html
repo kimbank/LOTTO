@@ -18,18 +18,32 @@
                 }
             }).then(res => res.json)
                 .then(data => console.log(makingLottoNumberTemp))
-                // .catch(err => console.error(err))
+            // .catch(err => console.error(err))
         }
 
     </script>
 
-    
-    <button id="button1" onclick="button1_click();">버튼1</button>
+
+    <button id="button1" onclick="button1_click();">lotto</button>
     <script>
         let test = [3, 2]
         function button1_click() {
-            console.log(lotto[0]);
+            console.log(lotto);
+        }
+    </script>
+
+    <button id="button2" onclick="button2_click();">test</button>
+    <script>
+        let test = [3, 2]
+        function button2_click() {
             console.log(test);
+        }
+    </script>
+    <button id="button3" onclick="button3_click();">res</button>
+    <script>
+        let test = [3, 2]
+        function button3_click() {
+            console.log(res);
         }
     </script>
 
