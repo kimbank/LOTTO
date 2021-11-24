@@ -1,6 +1,6 @@
 import random
 import json
-
+ 
 
 def makingLottoDBList():
   lottoDBList = []
