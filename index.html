@@ -5,8 +5,18 @@
 
     </head>
 
-    <form action="https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto" method="get">
-      </form>
+    <form action="https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto" method="get"></form>
+
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto",
+            data: { location: "lottoNumber" }
+        })
+            .done(function (msg) {
+                alert("Data Saved: " + msg);
+            });
+    </script>
 
 
     <body>
