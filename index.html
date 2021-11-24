@@ -5,42 +5,35 @@
     <meta charset="UTF-8">
 
     <script>
-        var lotto = [];
-        const URL = "https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto";
-        function get() {
-            fetch(URL, {
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(res => res.json())
-                .then(res => {
-                    lotto[0] = res.n1;
-                    lotto[1] = res.n2;
-                    lotto[2] = res.n3;
-                    lotto[3] = res.n4;
-                    lotto[4] = res.n5;
-                    lotto[5] = res.n6;
-                })
-        }
-
-        var html = "";
-        html += "";
-        html += lotto + "";
-        html += '';
-        html += '';
+        function lottoGen() {
 
 
-        function button5_click() {
-            console.log(lotto);
+            var lotto = [];
+            const URL = "https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto";
+            function get() {
+                fetch(URL, {
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(res => res.json())
+                    .then(res => {
+                        lotto[0] = res.n1;
+                        lotto[1] = res.n2;
+                        lotto[2] = res.n3;
+                        lotto[3] = res.n4;
+                        lotto[4] = res.n5;
+                        lotto[5] = res.n6;
+                    })
+            }
+
+            var html = "";
+            html += "";
+            html += lotto + "";
+            html += '';
+            html += '';
+            $("#lotto_table").find("tbody").append(html);
         }
     </script>
-</head>
-
-<body>
-    <input type="button" value="번호 받기" onclick="get()" />
-    <input type="button" value="번호 출력" onclick="button5_click()" />
-
-
 
     <style>
         .btn_register {
@@ -51,14 +44,20 @@
             outline: none;
         }
     </style>
+
     <div style="width:100%;text-align: center;">
         <span id="clipAlert" style="visibility:hidden; height:50px; width:300px;text-align: center;">
         </span>
         <br />
         <br />
-        <button type="button" class="btn_register thema_apply" onclick="get()">로또번호생성</button>
+        <button type="button" class="btn_register thema_apply" onclick="lottoGen()"> 로또번호생성 </button>
     </div>
-    <br />
+</head>
+
+<body>
+    <h1 align="center">
+        <input type="button" value="번호 받기" onclick="get()" />
+    </h1>
 
     <div id="lotto_div" style="height: 300px;overflow: auto;">
         <table id="lotto_table" style="width:100%">
@@ -74,6 +73,7 @@
             </tbody>
         </table>
     </div>
+
 </body>
 
 </html>
