@@ -32,25 +32,6 @@
 
 **3)** *lotto.csv* 에 1)의 조합이 없을 경우 **1**의 번호 조합 
 
-</br></br>
-
-# 2. AWS Lambda
-
-Test Lambda REST API test link
-
-> https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto
-
-</br></br>
-
-# 3. HTML UI
-
-> https://pit-and-pat.tistory.com/6
-
-위 블로그의 *html* 디자인 포멧을 사용하였습니다.
-
-</br></br>
-
-# 4. Python Code
 ```python
 
 import random
@@ -117,3 +98,22 @@ def lambda_handler(event, context):
   }
 
 ```
+
+
+</br></br>
+
+# 2. AWS Lambda
+
+Test Lambda REST API test link
+
+> https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto
+
+</br></br>
+
+# 3. HTML UI
+
+> https://pit-and-pat.tistory.com/6
+
+위 블로그의 *html* 디자인 포멧을 사용하였습니다.
+
+</br></br>
