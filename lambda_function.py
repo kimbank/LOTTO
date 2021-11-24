@@ -1,6 +1,6 @@
 import random
 import json
- 
+
 
 def makingLottoDBList():
   lottoDBList = []
@@ -31,14 +31,33 @@ def makingLottoNumber():
 
 
 def lambda_handler(event, context):
-    lottoDBList = makingLottoDBList()
-    while True:
-        makingLottoNumberTemp = makingLottoNumber()
-        
-        if makingLottoNumberTemp not in lottoDBList:
-            break
-
-    return {
-        'statusCode': 200,
-        'body': json.dumps(makingLottoNumberTemp)
-    }
+  makingLottoNumberTemp = makingLottoNumber()
+  lottoDBList = makingLottoDBList()
+  while True:
+      if makingLottoNumberTemp not in lottoDBList:
+        # print(makingLottoNumberTemp)
+        break
+      makingLottoNumberTemp = makingLottoNumber()
+      
+  n1 = "%d" %makingLottoNumberTemp[0]
+  n2 = "%d" %makingLottoNumberTemp[1]
+  n3 = "%d" %makingLottoNumberTemp[2]
+  n4 = "%d" %makingLottoNumberTemp[3]
+  n5 = "%d" %makingLottoNumberTemp[4]
+  n6 = "%d" %makingLottoNumberTemp[5]
+  
+  data = {
+    'n1': n1,
+    'n2': n2,
+    'n3': n3,
+    'n4': n4,
+    'n5': n5,
+    'n6': n6
+  }
+  
+  return {
+    'statusCode': 200,
+    'headers': {'Access-Control-Allow-Origin': '*'},
+    # 'body': json.dumps(makingLottoNumberTemp),
+    'body': json.dumps(data)
+  }
