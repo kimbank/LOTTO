@@ -22,7 +22,7 @@
                     lotto[5] = res.n6;
                 })
         }
-        
+
         function lottoGen() {
             get();
 
@@ -44,6 +44,12 @@
             outline: none;
         }
     </style>
+</head>
+
+<body>
+    <!-- <h1 align="center">
+        <input type="button" value="번호 받기" onclick="get()" />
+    </h1> -->
 
     <div style="width:100%;text-align: center;">
         <span id="clipAlert" style="visibility:hidden; height:50px; width:300px;text-align: center;">
@@ -52,12 +58,6 @@
         <br />
         <button type="button" class="btn_register thema_apply" onclick="lottoGen()"> 로또번호생성 </button>
     </div>
-</head>
-
-<body>
-    <h1 align="center">
-        <input type="button" value="번호 받기" onclick="get()" />
-    </h1>
 
     <div id="lotto_div" style="height: 300px;overflow: auto;">
         <table id="lotto_table" style="width:100%">
