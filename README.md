@@ -1,6 +1,10 @@
 <h1 align="center"> https://lotto.goldbank.dev </h1>
 <p align="center">
   <img src="https://img.shields.io/badge/language-javascript, python-succcess?style"/>
+  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
+  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
+  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
+  <a href="연결 링크" target="3776AB"><img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/></a>
 </p>
 
 # lotto API
@@ -24,3 +28,10 @@
 Test Lambda REST API test link
 
 > https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto
+
+
+# HTML UI
+
+> https://pit-and-pat.tistory.com/6
+
+위 블로그의 *html* 디자인 포멧을 사용하였습니다.
