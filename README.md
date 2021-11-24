@@ -1,9 +1,3 @@
-<h1 align="center"> 
-  <a href="https://lotto.goldbank.dev" target="blank">LOTTO.GOLDBANK.DEV</a>
-</h1>
-
-</br></br>
-
 <h1 align="center"> 🔨Stack🔨 </h1>
 
 <p align="center">
@@ -12,27 +6,35 @@
   <a><img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white"/></a>
   <a><img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=AmazonAWS&logoColor=white"/></a>
 </p>
+</br>
+<h1 align="center"> 
+  <a href="https://lotto.goldbank.dev" target="blank">LOTTO.GOLDBANK.DEV</a>
+</h1>
 
-</br></br>
+</br></br></br></br></br>
 
-# lotto API
+# 1. lotto API
 
-## lotto.csv
+</br>
+
+## 1-1. lotto.csv
 역대 로또 당첨 번호
 
 > https://dhlottery.co.kr/gameResult.do?method=byWin
 
-## lambda_function.py
+</br>
 
-**1.** 1 ~ 45 랜덤 번호 6개 생성
+## 1-2. lambda_function.py
 
-**2.** *lotto.csv* 에 **1**의 조합이 있을 경우 번호 재 조합
+**1)** 1 ~ 45 랜덤 번호 6개 생성
 
-**3.** *lotto.csv* 에 **1**의 조합이 없을 경우 **1**의 번호 조합 
+**2)** *lotto.csv* 에 1)의 조합이 있을 경우 번호 재 조합
+
+**3)** *lotto.csv* 에 1)의 조합이 없을 경우 **1**의 번호 조합 
 
 </br></br>
 
-# AWS Lambda
+# 2. AWS Lambda
 
 Test Lambda REST API test link
 
@@ -40,7 +42,7 @@ Test Lambda REST API test link
 
 </br></br>
 
-# HTML UI
+# 3. HTML UI
 
 > https://pit-and-pat.tistory.com/6
 
