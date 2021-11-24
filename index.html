@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
-        </script>
 
-    <script>
-        $.ajax({
-            method: "ANY",
-            url: "https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto",
-            data: { location: "lottoNumber" }
-        })
-            .done(function (msg) {
-                alert("Data Saved: " + msg);
-            });
-    </script>
+<head>
+    <meta charset="UTF-8">
 </head>
+
 <body>
-    <a href="https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto" />
+    <!-- <a href="https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto" /> -->
+
+    <input type="button" value="GET" onclick="get()" />
+    <script>
+        const URL = "https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto";
+        function get() {
+            fetch(URL, {
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(res => res.json)
+                .then(data => console.log(data))
+                .catch(err => console.error(err))
+        }
+
+    </script>
 
 </body>
 
