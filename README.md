@@ -106,7 +106,7 @@ def lambda_handler(event, context):
 
 Test Lambda REST API test link
 
-> https://aoru1i3nra.execute-api.ap-northeast-2.amazonaws.com/default/lotto
+> https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto
 
 </br></br>
 
