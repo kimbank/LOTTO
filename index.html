@@ -1,64 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+
 <head>
     <meta charset="UTF-8">
 
-    <script>
-        var lotto = [];
-        const URL = "https://skp7t6j64m.execute-api.ap-northeast-2.amazonaws.com/2021-11-24/lotto";
-        function get() {
-            fetch(URL, {
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(res => res.json())
-                .then(res => {
-                    lotto[0] = res.n1;
-                    lotto[1] = res.n2;
-                    lotto[2] = res.n3;
-                    lotto[3] = res.n4;
-                    lotto[4] = res.n5;
-                    lotto[5] = res.n6;
-                })
-        }
-
-        get();
-
-        function lottoGen() {
-            get();
-            console.log("lotto : " + lotto);
-            var html = "<tr>";
-            html += "<td>";
-            html += lotto + "<br/>";
-            html += '</td>';
-            html += '</tr>';
-            $("#lotto_table").find("tbody").prepend(html);
-        }
-    </script>
-
-    <style>
-        .btn_register {
-            width: 105px;
-            height: 36px;
-            color: rgb(29, 211, 23);
-            cursor: pointer;
-            outline: none;
-        }
-        p {
-            text-align: center; 
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="lotto_button.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 </head>
 
+
 <body>
-    <!-- <h1 align="center">
-        <input type="button" value="번호 받기" onclick="get()" />
-    </h1> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-
+<br>
     <p>
         <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Flotto.goldbank.dev&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=%EB%B0%A9%EB%AC%B8%EC%9E%90&edge_flat=false"/>
     </p>
@@ -71,7 +25,9 @@
         <button type="button" class="btn_register thema_apply" onclick="lottoGen()"> 로또번호생성 </button>
     </div>
 
-    <a id="lotto_div" style="height: 300px;overflow: auto;">
+    </br>
+
+    <div id="lotto_div" style="height: 400px;overflow: auto;">
         <table id="lotto_table" style="width:100%">
             <colgroup class="bg1">
                 <col style="width:100%" />
@@ -84,7 +40,15 @@
             <tbody align="center">
             </tbody>
         </table>
-    </a>
+    </div>
+
+    </br></br></br>
+
+    <footer class="footer">
+        이 사이트는 Github의 정적 웹사이트 생성인 Github Pages 기능을 사용하여 만들었습니다. <br/>
+        이 사이트의 모든 소스코드는 <a href="https://github.com/kimbank/lotto">Github repository lotto</a> 에 저장되어 있습니다.
+    </footer>
+
 </body>
 
 </html>
