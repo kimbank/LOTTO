@@ -1,3 +1,7 @@
+<!-- <img src="https://img.shields.io/badge/브랜드 이름-색상 코드?style=flat-square&logo=브랜드이름&logoColor=white"/> -->
+<!-- $ 참고 링크 $ https://simpleicons.org/ -->
+<!-- *주의* 색상코드 입력시에 '#' 빼야함 -->
+
 <h1 align="center"> 🔨Stack🔨 </h1>
 
 <p align="center">
