@@ -75,7 +75,6 @@ def lambda_handler(event, context):
   lottoDBList = makingLottoDBList()
   while True:
       if makingLottoNumberTemp not in lottoDBList:
-        # print(makingLottoNumberTemp)
         break
       makingLottoNumberTemp = makingLottoNumber()
       
